@@ -1,0 +1,172 @@
+# Created by JDXE
+# Cloned from Gruvbox Rainbow
+# Heavily Inspired by Gruvbox Rainbow,Pastel Powerline, and Tokyo Night.
+
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[](colour_ffde4c)\
+$os\
+$username\
+[](bg:colour_ffe070 fg:colour_ffde4c)\
+$directory\
+[](fg:colour_ffe070 bg:colour_ffe68d)\
+$git_branch\
+$git_status\
+[](fg:colour_ffe68d bg:colour_ffeaad)\
+$c\
+$rust\
+$golang\
+$nodejs\
+$php\
+$java\
+$kotlin\
+$haskell\
+$python\
+[](fg:colour_ffeaad bg:colour_fff7d2)\
+$docker_context\
+$conda\
+[](fg:colour_fff7d2 bg:color_bg1)\
+$time\
+[ ](fg:color_bg1)\
+$character"""
+
+palette = 'sunshine'
+
+[palettes.sunshine]
+colour_foreground = '#fff7d2'
+color_bg1 = '#3c3836'
+colour_fff7d2 = '#fff7d2'
+colour_ffeaad = '#ffeaad'
+colour_ffe68d = '#ffe68d'
+colour_arrow = '#ffde4c'
+colour_ffde4c = '#ffde4c'
+colour_FFA500 = '#FFA500'
+color_red = '#cc241d'
+colour_ffe070 = '#ffe070'
+
+[os]
+disabled = false
+style = "bg:colour_ffde4c fg:colour_foreground"
+
+[os.symbols]
+Windows = ""
+Ubuntu = "󰕈"
+SUSE = ""
+Raspbian = "󰐿"
+Mint = "󰣭"
+Macos = "󰀵"
+Manjaro = ""
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
+Arch = "󰣇"
+Artix = "󰣇"
+EndeavourOS = ""
+CentOS = ""
+Debian = "󰣚"
+Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
+
+[username]
+show_always = true
+style_user = "bg:colour_ffde4c fg:colour_foreground"
+style_root = "bg:colour_ffde4c fg:colour_foreground"
+format = '[ $user ]($style)'
+
+[directory]
+style = "fg:colour_foreground bg:colour_ffe070"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+"Developer" = "󰲋 "
+
+[git_branch]
+symbol = ""
+style = "bg:colour_ffe68d"
+format = '[[ $symbol $branch ](fg:colour_foreground bg:colour_ffe68d)]($style)'
+
+[git_status]
+style = "bg:colour_ffe68d"
+format = '[[($all_status$ahead_behind )](fg:colour_foreground bg:colour_ffe68d)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:colour_ffeaad"
+format = '[[ $symbol( $version) ](fg:colour_foreground bg:colour_ffeaad)]($style)'
+
+[c]
+symbol = " "
+style = "bg:colour_ffeaad"
+format = '[[ $symbol( $version) ](fg:colour_foreground bg:colour_ffeaad)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:colour_ffeaad"
+format = '[[ $symbol( $version) ](fg:colour_foreground bg:colour_ffeaad)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:colour_ffeaad"
+format = '[[ $symbol( $version) ](fg:colour_foreground bg:colour_ffeaad)]($style)'
+
+[php]
+symbol = ""
+style = "bg:colour_ffeaad"
+format = '[[ $symbol( $version) ](fg:colour_foreground bg:colour_ffeaad)]($style)'
+
+[java]
+symbol = " "
+style = "bg:colour_ffeaad"
+format = '[[ $symbol( $version) ](fg:colour_foreground bg:colour_ffeaad)]($style)'
+
+[kotlin]
+symbol = ""
+style = "bg:colour_ffeaad"
+format = '[[ $symbol( $version) ](fg:colour_foreground bg:colour_ffeaad)]($style)'
+
+[haskell]
+symbol = ""
+style = "bg:colour_ffeaad"
+format = '[[ $symbol( $version) ](fg:colour_foreground bg:colour_ffeaad)]($style)'
+
+[python]
+symbol = ""
+style = "bg:colour_ffeaad"
+format = '[[ $symbol( $version) ](fg:colour_foreground bg:colour_ffeaad)]($style)'
+
+[docker_context]
+symbol = ""
+style = "bg:colour_fff7d2"
+format = '[[ $symbol( $context) ](fg:#83a598 bg:colour_fff7d2)]($style)'
+
+[conda]
+style = "bg:colour_fff7d2"
+format = '[[ $symbol( $environment) ](fg:#83a598 bg:colour_fff7d2)]($style)'
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:color_bg1"
+format = '[[  $time ](fg:colour_foreground bg:color_bg1)]($style)'
+
+[line_break]
+disabled = false
+
+[character]
+disabled = false
+success_symbol = '[󰖨 〉](bold fg:colour_arrow)'
+error_symbol = '[󰖨 〉](bold fg:color_red)'
+vimcmd_symbol = '[〈](bold fg:colour_arrow)'
+vimcmd_replace_one_symbol = '[〈](bold fg:colour_FFA500)'
+vimcmd_replace_symbol = '[〈](bold fg:colour_FFA500)'
+vimcmd_visual_symbol = '[〈](bold fg:colour_ffe070)'
