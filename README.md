@@ -5,3 +5,6 @@
 # link to installation setup: https://github.com/starship/starship
 # fonts: https://www.nerdfonts.com/font-downloads
 # icons cheetsheet: https://www.nerdfonts.com/cheat-sheet
+
+Here is a list of the templates and what they will look like
+![image](https://github.com/user-attachments/assets/aaf6cfe1-cd3b-46b9-8943-57c172209f1a)
