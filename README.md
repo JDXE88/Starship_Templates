@@ -79,6 +79,5 @@ If you are using PowerShell, follow these steps:
    ```
    Directory: C:\Users\<username>\.config\starship.toml
    ```
-```
 
 This format organises the instructions clearly and provides a structured approach to setting up your templates and configuring Starship in PowerShell.
