@@ -13,7 +13,6 @@ This repository contains TOML templates that I created. I thought people might f
 ## Templates Preview
 
 Here is a preview of one of the templates:
-![image](https://github.com/user-attachments/assets/407cfe3f-909c-4899-9d14-78a416f8e2cf)
 
 ![Template Preview](https://github.com/user-attachments/assets/aaf6cfe1-cd3b-46b9-8943-57c172209f1a)
 
