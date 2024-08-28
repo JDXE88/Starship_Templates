@@ -16,6 +16,9 @@ Here is a preview of one of the templates:
 
 ![Template Preview](https://github.com/user-attachments/assets/aaf6cfe1-cd3b-46b9-8943-57c172209f1a)
 
+New!:
+![image](https://github.com/user-attachments/assets/fb50ffce-14a5-49d5-aa51-aa8295ff0663)
+
 ## PowerShell Setup Instructions
 
 If you are using PowerShell, follow these steps:
